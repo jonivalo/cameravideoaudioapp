@@ -1,11 +1,9 @@
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
 import AudioRec from "../screens/AudioRec";
 import CameraX from "../screens/CameraX";
 import Home from "../screens/Home";
-
 import VideoRec from "../screens/VideoRec";
 
 
@@ -21,9 +19,7 @@ export default function AppNavi() {
         <Stack.Screen
          name = "Home" 
           component={Home}
-          options={{
-            headerBackVisible: false,
-           }}
+          
           
         />
         <Stack.Screen 
