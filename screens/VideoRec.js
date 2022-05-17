@@ -73,9 +73,9 @@ export default function VideoRec() {
           resizeMode='contain'
           isLooping
         />
-        <Button title="Share" onPress={shareVideo} />
-        {hasMediaLibraryPermission ? <Button title="Save" onPress={saveVideo} /> : undefined}
-        <Button title="Discard" onPress={() => setVideo(undefined)} />
+        <Button color="#e76f51" title="Share" onPress={shareVideo} />
+        {hasMediaLibraryPermission ? <Button color="#e76f51" title="Save" onPress={saveVideo} /> : undefined}
+        <Button color="#e76f51" title="Discard" onPress={() => setVideo(undefined)} />
       </SafeAreaView>
     );
   }
@@ -83,7 +83,7 @@ export default function VideoRec() {
   return (
     <Camera style={Styles.containerVi} ref={cameraRef}>
       <View style={Styles.buttonContainerVi}>
-        <Button title={isRecording ? "Stop Recording" : "Record Video"} onPress={isRecording ? stopRecording : recordVideo} />
+        <Button color="#e76f51" title={isRecording ? "Stop Recording" : "Record Video"} onPress={isRecording ? stopRecording : recordVideo} />
       </View>
     </Camera>
   );

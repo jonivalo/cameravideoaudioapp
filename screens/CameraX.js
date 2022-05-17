@@ -53,9 +53,9 @@ export default function CameraX() {
     return (
       <SafeAreaView style={Styles.containerCa}>
         <Image style={Styles.previewCa} source={{ uri: "data:image/jpg;base64," + photo.base64 }} />
-        <Button title="Share" onPress={sharePic} />
-        {hasMediaLibraryPermission ? <Button title="Save" onPress={savePhoto} /> : undefined}
-        <Button title="Discard" onPress={() => setPhoto(undefined)} />
+        <Button color="#e76f51" title="Share" onPress={sharePic} />
+        {hasMediaLibraryPermission ? <Button color="#e76f51" title="Save" onPress={savePhoto} /> : undefined}
+        <Button color="#e76f51" title="Discard" onPress={() => setPhoto(undefined)} />
       </SafeAreaView>
     );
   }
@@ -63,7 +63,7 @@ export default function CameraX() {
   return (
     <Camera style={Styles.containerCa} ref={cameraRef}>
       <View style={Styles.buttonContainerCa}>
-        <Button title="Take Pic" onPress={takePic} />
+        <Button color="#e76f51" title="Take Pic" onPress={takePic} />
       </View>
     </Camera>
   );

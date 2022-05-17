@@ -50,6 +50,7 @@ containerCa: {
 flex: 1,
 alignItems: 'center',
 justifyContent: 'center',
+backgroundColor: '#e9c46a',
 },
 buttonContainerCa: {
 backgroundColor: '#fff',
@@ -63,6 +64,7 @@ containerVi: {
 flex: 1,
 alignItems: 'center',
 justifyContent: 'center',
+backgroundColor: '#f4a261',
 },
 buttonContainerVi: {
 backgroundColor: "#fff",

@@ -60,8 +60,12 @@ export default function AudioRec() {
       return (
         <View key={index} style={Styles.rowAu}>
           <Text style={Styles.fillAu}>Recording {index + 1} - {recordingLine.duration}</Text>
-          <Button style={Styles.buttonAu} onPress={() => recordingLine.sound.replayAsync()} title="Play"></Button>
-          <Button style={Styles.buttonAu} onPress={() => Sharing.shareAsync(recordingLine.file)} title="Share"></Button>
+          <Button style={Styles.buttonAu}
+          color="#264653"
+           onPress={() => recordingLine.sound.replayAsync()} title="Play"></Button>
+          <Button style={Styles.buttonAu}
+          color="#264653"
+           onPress={() => Sharing.shareAsync(recordingLine.file)} title="Share"></Button>
         </View>
       );
     });
@@ -71,6 +75,7 @@ export default function AudioRec() {
     <View style={Styles.containerAu}>
       <Text>{message}</Text>
       <Button
+        color="#264653"
         title={recording ? 'Stop Recording' : 'Start Recording'}
         onPress={recording ? stopRecording : startRecording} />
       {getRecordingLines()}
